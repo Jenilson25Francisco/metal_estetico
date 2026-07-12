@@ -2,9 +2,8 @@
 
 import { NavItem } from "./nav-item";
 import { Button } from "../ui/button";
-import { MenuIcon, X } from "lucide-react";
-import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import { useState } from "react";
+import { MenuIcon, X } from "lucide-react";
 
 const NAV_ITEMS = [
 	{ label: "Home", href: "/" },
