@@ -4,7 +4,7 @@ export default function Home() {
 	return (
 		<main>
 			<div>Hello world!</div>
-			<Button className="text-foreground font-bold">Click me</Button>
+			<Button className="font-bold">Click me</Button>
 		</main>
 	);
 }
