@@ -1,6 +1,6 @@
+import { Navlink } from "@/components/nav-links";
 import Image from "next/image";
 import Link from "next/link";
-import { Navlink } from "@/components/nav-links";
 
 export function Header() {
 	return (
@@ -10,9 +10,10 @@ export function Header() {
 					<Image
 						src="/logo.jpg"
 						alt="Logo"
-						width={100}
-						height={100}
+						width={84}
+						height={32}
 						loading="eager"
+						style={{ width: "auto" }}
 					/>
 				</Link>
 				<Navlink />
