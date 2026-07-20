@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: "Metal Estético",
 		description: "Serviços de serralharia",
-		locale: "pt_PT",
+		locale: "pt_AO",
 		images: [
 			{
 				url: "/logo.jpg",
