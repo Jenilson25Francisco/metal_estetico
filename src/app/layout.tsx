@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { Ubuntu } from "next/font/google";
 import { Header } from "@/components/header";
 import { cn } from "@/lib/utils";
+import type { Metadata } from "next";
+import { Ubuntu } from "next/font/google";
+import "./globals.css";
 
 const ubuntu = Ubuntu({
 	subsets: ["latin"],
@@ -14,10 +14,11 @@ export const metadata: Metadata = {
 	title: "Metal Estético",
 	description: "Serviços de serralharia",
 	keywords: ["serralharia", "fechadura", "portão", "metal estético"],
+	metadataBase: new URL("http://localhost:3000"),
 	openGraph: {
 		title: "Metal Estético",
 		description: "Serviços de serralharia",
-		locale: "pt_AO",
+		locale: "pt_PT",
 		images: [
 			{
 				url: "/logo.jpg",
@@ -37,16 +38,6 @@ export const metadata: Metadata = {
 			"max-image-preview": "large",
 		},
 	},
-	twitter: {
-		card: "summary_large_image",
-		title: "metal estético",
-		description: "Serviços de serralharia",
-		images: ["/logo.jpg"],
-		creator: "@metalestetico",
-	},
-	facebook: {
-		appId: "1234567890",
-	}
 };
 
 export default function RootLayout({

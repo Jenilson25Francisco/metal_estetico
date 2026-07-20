@@ -1,10 +1,7 @@
-import { Button } from "@/components/ui/button";
-
 export default function Home() {
 	return (
-		<main>
-			<div>Hello world!</div>
-			<Button className="font-bold">Click me</Button>
+		<main className="">
+			<section className="bg-[url(/background.jpg)] bg-cover bg-center min-h-screen overflow-hidden"></section>
 		</main>
 	);
 }

@@ -1,9 +1,9 @@
 "use client";
 
-import { NavItem } from "./nav-item";
-import { Button } from "../ui/button";
-import { useState } from "react";
 import { MenuIcon, X } from "lucide-react";
+import { useState } from "react";
+import { Button } from "../ui/button";
+import { NavItem } from "./nav-item";
 
 const NAV_ITEMS = [
 	{ label: "Home", href: "/" },
@@ -31,6 +31,7 @@ export function Navlink() {
 				onClick={handleNavgation}
 				variant="secondary"
 			>
+				<span className="sr-only">botão abrir o menu</span>
 				<MenuIcon className="size-4" />
 			</Button>
 
@@ -47,6 +48,7 @@ export function Navlink() {
 						onClick={handleNavgation}
 						className="absolute top-2 right-2"
 					>
+						<span className="sr-only">botão fechar o menu</span>
 						<X className="size-4" />
 					</Button>
 
